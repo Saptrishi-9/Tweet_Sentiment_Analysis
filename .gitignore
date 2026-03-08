@@ -1,0 +1,7 @@
+_pycache_
+.vscode
+twitter_training.csv
+twitter_validation.csv
+predict.cpython-310.pyc
+w2v_model.model
+tweet_sentiment_analysis_model.h5
