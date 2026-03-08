@@ -5,6 +5,9 @@ from nltk.tokenize import word_tokenize
 from nltk.stem import WordNetLemmatizer
 from gensim.models import Word2Vec
 
+import nltk
+nltk.download('punkt')
+
 # Load the Model
 model = load_model('tweet_sentiment_analysis_model.h5')
 
