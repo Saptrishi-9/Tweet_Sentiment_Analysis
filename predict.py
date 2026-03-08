@@ -7,6 +7,7 @@ from gensim.models import Word2Vec
 
 import nltk
 nltk.download('punkt')
+nltk.download('wordnet')
 
 # Load the Model
 model = load_model('tweet_sentiment_analysis_model.h5')
