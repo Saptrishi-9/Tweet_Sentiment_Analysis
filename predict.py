@@ -6,8 +6,15 @@ from nltk.stem import WordNetLemmatizer
 from gensim.models import Word2Vec
 
 import nltk
-nltk.download('punkt')
-nltk.download('wordnet')
+import os
+
+nltk_data_dir = os.path.join(os.getcwd(), "nltk_data")
+os.makedirs(nltk_data_dir, exist_ok=True)
+
+nltk.data.path.append(nltk_data_dir)
+
+nltk.download("punkt", download_dir=nltk_data_dir)
+nltk.download("wordnet", download_dir=nltk_data_dir)
 
 # Load the Model
 model = load_model('tweet_sentiment_analysis_model.h5')
